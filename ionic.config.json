@@ -1,0 +1,7 @@
+{
+  "name": "mindly",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

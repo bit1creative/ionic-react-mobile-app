@@ -14,11 +14,7 @@ import TimeSlider from "components/TimeSlider";
 import BottomSection from "components/BottomSection";
 import Loading from "components/LoadingComponent";
 import { connect, useDispatch, useSelector } from "react-redux";
-import {
-  fetchSavedInfo,
-  selectedPsychologistIndexSelector,
-  setSelectedPsychologistIndex,
-} from "store/slices/recordSlice";
+import { fetchSavedInfo } from "store/slices/recordSlice";
 
 interface Props {
   selectedPsychologistIndex: number;

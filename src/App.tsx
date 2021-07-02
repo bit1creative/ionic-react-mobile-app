@@ -21,8 +21,20 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
+import { useEffect } from "react";
 
 const App: React.FC = () => {
+  function setViewHeight() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  }
+
+  useEffect(() => {
+    setViewHeight();
+    window.addEventListener("resize", () => {
+      setViewHeight();
+    });
+  }, []);
   return (
     <IonApp>
       <IonReactRouter>

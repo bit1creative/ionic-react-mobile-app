@@ -37,9 +37,9 @@ const PsychologistsSlider: React.FC<Props> = ({ psychologists, _index }) => {
 
   function getActiveSlider(e: CustomEvent<void>) {
     const target = e.target as HTMLIonSlidesElement;
-    return target
-      .getActiveIndex()
-      .then((index: number) => dispatch(setSelectedPsychologistIndex(index)));
+    return target.getActiveIndex().then((index: number) => {
+      if (index !== _index) dispatch(setSelectedPsychologistIndex(index));
+    });
   }
 
   return (

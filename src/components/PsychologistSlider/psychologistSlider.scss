@@ -1,0 +1,37 @@
+@use '../../assets/constants';
+
+.profile-pic {
+  width: 10rem !important;
+  max-width: none !important;
+  aspect-ratio: 1/1;
+  background-color: #ade5f4;
+  border-radius: 5px;
+}
+
+.consultation-duration {
+  display: grid;
+  place-content: center;
+  font-size: 1.1rem;
+  font-family: constants.$main-font;
+  font-size: 16px;
+  font-weight: 400;
+  color: constants.$gray-font;
+  span:last-of-type {
+    font-weight: 600;
+    color: #1d201f;
+  }
+}
+
+.psychologist-card-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: constants.$main-font;
+  font-weight: 700;
+  font-size: 18px;
+  color: #1d201f;
+}
+
+.psychologist-slider {
+  margin-bottom: 2rem;
+}

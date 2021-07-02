@@ -1,0 +1,24 @@
+@use '../../assets/constants';
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: constants.$main-font;
+  font-size: 16px;
+  color: #5b5b5b;
+  span:last-of-type {
+    font-size: 20px;
+    color: #1d201f;
+    font-weight: 700;
+  }
+  &.time-col {
+    border-left: 1px solid #e5e5e5;
+  }
+  .process-btn {
+    color: white;
+    font-family: constants.$main-font;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}

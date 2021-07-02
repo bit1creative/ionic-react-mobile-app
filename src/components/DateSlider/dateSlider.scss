@@ -1,0 +1,59 @@
+@use '../../assets/constants';
+
+.date-slider-header {
+  font-family: constants.$main-font;
+  .date-btn {
+    background-color: transparent;
+    font-size: 1.2em;
+    color: constants.$gray-font;
+    // искуственно сделал вторую кнопку инэктив
+    &.active {
+      color: #33bde4;
+    }
+    // &:focus {
+    //   color: #33bde4;
+    // }
+  }
+}
+.section-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: constants.$gray-font;
+}
+
+.date-card {
+  width: 86px;
+  height: 92px;
+  margin-inline: 0px !important;
+  --background: transparent;
+  --box-shadow: 2px 3px 10px rgba(150, 150, 150, 0.3);
+  &.active {
+    span {
+      color: #33bde4;
+    }
+    --background: #f0fbff;
+    border-radius: 5px;
+    border: 1px solid #33bde4;
+  }
+}
+
+.date-card-title {
+  font-family: constants.$main-font;
+  font-weight: 400;
+  font-size: 14px;
+  color: constants.$gray-font;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+.date-card-content {
+  font-family: constants.$main-font;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1d201f;
+  padding: 13px;
+}
+
+.date-slider {
+  margin-bottom: 2rem;
+}

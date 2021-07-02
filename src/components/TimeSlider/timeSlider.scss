@@ -1,0 +1,32 @@
+@use '../../assets/constants';
+
+.time-section-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: constants.$gray-font;
+  font-family: constants.$main-font;
+}
+
+.time-card {
+  --background: transparent;
+  --box-shadow: none;
+  .time-span {
+    color: black;
+    font-family: constants.$main-font;
+    font-size: 24px;
+    font-weight: 400;
+    color: #c1c1c1;
+    transition: all 0.1s ease-out;
+  }
+  &.active {
+    .time-span {
+      color: #33bde4;
+      font-size: 32px;
+      font-weight: 700;
+    }
+  }
+}
+
+.time-slider {
+  margin-bottom: 2rem;
+}

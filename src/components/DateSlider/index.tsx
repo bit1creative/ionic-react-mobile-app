@@ -55,7 +55,7 @@ const DateSlider: React.FC<Props> = ({ availableDates, selectedDateIndex }) => {
   function getDayFromDate(date: string): string {
     //   узнаем сегодня ли это
     const today = moment();
-    if (moment(date).diff(today, "days") === 0) return "Сегодня";
+    if (moment(date).isSame(today, "day")) return "Сегодня";
     // если не сегодня, возращаем день недели
     const day = moment(date).locale("ru").format("ddd");
     return day;
